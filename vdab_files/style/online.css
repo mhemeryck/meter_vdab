@@ -1,0 +1,293 @@
+fieldset {
+	border: none;
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 0.35em 0.75em 0.625em;
+}
+
+
+fieldset legend {
+	color: #215582;
+	font-family: georgia;
+	font-size: 1.4em;
+	font-weight: normal;
+	padding-top:15px;
+	padding-bottom:5px;
+	
+}
+#totalJobsAmount {
+	color:orange;
+	font-weight:700;
+	margin-bottom:4px;
+	display:block;
+}
+#frmSearch, #uitgebreidZoekenPage {
+	margin-top:0;
+}
+a.image {
+	border:none;
+}
+/************************************** Kiss left-hand frame ******/
+body.cvSelection {
+	background: none;
+	padding-left: 10px;
+	text-align: left;
+	xborder-right: 1px solid #EEE;
+}
+
+body.cvSelection div#actionBox {
+	background:none repeat scroll 0 0 #E9F2F8;
+	border:1px solid #C4DDEC;
+	margin:0.5em 0.5em 0.5em 0;
+	padding:7px 15px;
+}
+body.cvSelection div#actionBox div {
+	text-align:center;
+	padding: 1px 0;
+}
+
+body.cvSelection div#xnextPrevious {
+	text-align: right;
+	margin-bottom: 5px;
+	margin-right: 0.5em;
+}
+
+body.cvSelection div#groupActions {
+	padding-top: 10px;
+}
+
+body.cvSelection div.results {
+	padding-top: 5px;
+}
+
+body.cvSelection a {
+	border: none;
+}
+
+
+/********* Vind een werkneemer ******/
+
+.legacy table.formtable {
+	border: 1px solid #dae3e6;
+	margin-top: 1em;
+	padding-top: 1em;
+	background-color: #f7fafb;
+}
+
+.legacy table.formtable th {
+	font-family : Georgia, Times, serif;
+	font-weight : normal;
+	color: #215582;
+	font-size: 1.3em;
+	padding-top: 15px;
+}
+
+.legacy table.formtable td, .legacy table.formtable th {
+	padding-left: 20px;
+	padding-right: 5px;
+}
+
+
+/******************************** Nieuwe werkgevers homepage *********************************/
+#werkgeverHome ul.functionBlocks {
+	margin-bottom:2em;
+}
+#werkgeverHome ul.functionBlocks li{
+	background:none;
+	padding-left:0;
+	padding-top:5px;
+	margin:0;
+	margin-bottom:15px;
+	border-top:1px solid #bbb;
+}
+
+#werkgeverHome 	ul.functionBlocks li p{
+	margin-left:88px;
+	display:block;
+	margin-bottom:.4em;
+	color:#777777;
+}
+#werkgeverHome ul.functionBlocks li img {
+	padding-right:8px;
+	margin:0;
+	margin-right:10px;
+	padding-top:0;
+}
+#werkgeverHome #leftColumn {
+	width:550px;
+	float:left;
+}
+
+#werkgeverHome img.left {
+	border:medium none;
+	float:left;
+	margin-bottom:1em;
+	margin-right:1em;
+}
+
+#werkgeverHome div.boxCool {
+	border:1px solid #c8ddeb;
+	background-color: #eaf2f7;
+}
+
+#werkgeverHome #rightColumn {
+	float: right;
+	width: 250px;
+}
+#werkgeverHome ul.actionLinks {
+	margin: 0;
+	padding: 0;
+	margin-left: 89px;
+}
+#werkgeverHome ul.actionLinks li{
+	margin-bottom: 3px;
+	padding-top: 0;
+	border: none;
+}
+#werkgeverHome ul.actionLinks li a{
+	font-weight: bold;
+}
+#werkgeverHome h4 a{
+	color:#4A9500;
+	font-family:Arial;
+}
+#werkgeverHome div.boxSpring.home div.boxPadding, #werkgeverHome div.boxCool.home div.boxPadding, #werkgeverHome div.boxSunny.home div.boxPadding  {
+	padding:1.4em 2.4em;
+}
+#werkgeverHome ul.lightList li {
+	padding:0.1em 0 0.1em 1em;
+	margin:0;
+	font-weight:normal;
+	background:url(http://vdab.be/style/bullets/bullet_round_orange.gif) no-repeat left 0.6em;
+}
+div.legacy table.formtable td table.formtable {
+	border:none;
+}
+div.legacy table.formtable td table.formtable td{
+	padding-left:0;
+}
+div.legacy #listOverview tr.subheader td {
+	border-bottom:1px solid #DAE3E6;
+	color:#666;
+}
+div.legacy #listOverview tr.formtableGrey td{
+	background-color:#fff;
+}
+div.legacy h1~br {
+	display:none;
+}
+a#premiesPage_premiesAanvragen_dossierPage_terug {
+	float:right;
+}
+.formStandard #aanvraag_table0 tr td, .formStandard table#aanvraag_table1 tr td, .formStandard table#aanvraag_table2 tr td, .formStandard table#aanvraag_table13 tr td,
+.formStandard table#aanvraag_table29 tr td, .formStandard #onderneming_table tr td, .formStandard #aanvraag_table tr td, .formStandard #persoon_table tr td{
+	padding-left:10px;
+}
+div.legacy table.formtable table td {
+	padding-left:0;
+}
+
+
+/*-------------------------------Mijn Cursussen extra stuff*/
+
+#mijnCursussen li a {
+	border-bottom: none;
+}
+
+#mijnCursussen h3 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+#mijnCursussen h5 {
+	margin-top: 1.5em;
+}
+
+/*-------------------------------END Mijn Cursussen extra*/
+
+.right {
+text-align: right;
+}
+
+a.addthis_button {
+    border: 0px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    margin-right: 5px;
+    margin-left: 3px;
+    white-space: nowrap;
+    background: url(action/addthis.gif) top left no-repeat;
+    padding-left: 18px;
+}
+
+/*-------------------------------Start button fix opleidingen gids */
+
+a#opleidingPraktischDetailPage_container_opleidingPraktischDetail_inschrijven_SchrijfJeIn {
+	display:block;
+	margin: 0;
+	padding: 5px 20px;
+	background-image: none;
+	background-color: #85af00;
+	color: white;
+	float: left;
+	border-radius: 5px;
+	border: 1px dotted #6b8b00;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+a#opleidingPraktischDetailPage_container_opleidingPraktischDetail_inschrijven_SchrijfJeIn:hover {
+	background-color: #6b8b00;
+	border: 1px dotted #5e7600;
+	text-decoration: none;
+}
+
+/*-------------------------------End button fix opleidingen gids */
+
+/*-------------------------------fix for maps */
+
+#map_canvas a {border: none}
+
+/*-------------------------------Specifieke fix voor jobspot klant */
+
+/*#XCOMPANY_114597 #LINK_JOBSPOT img, #XCOMPANY_169428 #LINK_JOBSPOT img, #XCOMPANY_114599 #LINK_JOBSPOT img, #XCOMPANY_166390 #LINK_JOBSPOT img{ display:none }*/
+a#jobspot[href="/mijnvdab/jobspot/jobspot.jsp?ID=10032418&action=JOBSPOTDETAIL"] img { display:none; }
+a#LINK_JOBSPOT[href="/mijnvdab/jobspot/jobspot.jsp?ID=10032418&action=JOBSPOTDETAIL"] img { display:none; }
+td.logo a#LINK_JOBSPOT[href="/mijnvdab/jobspot/jobspot.jsp?ID=10032418&action=JOBSPOTDETAIL"] img { display:inline; }
+
+
+/* Slight improvement of the sponsored results in the job search */
+
+#adBlockSpots .vacInfo a {font-weight: bold;}
+#adBlock.boxSpring {padding-left: 10px;}
+h4.adBlockTitle {padding-left: 13px;}
+
+
+/* -------------------- MLB Menu fix -------------- */
+
+li#mijndossier a, li#mijnvacatures a, li#mijncv a, li#mijnOpleidingen a, li#mijnontwikkelingsplan a, li#mijnberichten a, li#mijndocumenten a {
+	padding: 7px 14px 7px 14px;
+}
+
+/*-------------------------------fix logo new vac */
+
+#content {position:relative;}
+.vacaturePreview .vacatureDetail h2 {width:390px;}
+.vacaturePreview #vacatureContent {padding-top: 50px;}
+/*#LINK_JOBSPOT {padding-bottom:15px;padding-left:15px;position:absolute;top: 133px;left: 411px;z-index: 999;}*/
+.vacaturePreview #vacatureMeta {position: absolute;right: 0px;top:80px;height: 100%;}
+/*#LINK_JOBSPOT {position: relative;top: 0px;left: 0px;padding-left: 0px;position: relative;left: -12px;top: 12px;z-index: 999;display:block;height:80px;}*/
+#LINK_JOBSPOT {position: relative;top: 0px;left: 0px;padding-left: 0px;position: relative;z-index: 999;display:block;height:80px;width:180px;float:right;padding:12px;}
+
+.vacaturePreview #vacatureMeta .footer {position: absolute; bottom: 100px;}
+
+#XCOMPANY_9961 #LINK_JOBSPOT, #XCOMPANY_12313 #LINK_JOBSPOT, #XCOMPANY_9985 #LINK_JOBSPOT, #XCOMPANY_10666 #LINK_JOBSPOT, #XCOMPANY_3371 #LINK_JOBSPOT, #XCOMPANY_159828 #LINK_JOBSPOT, #XCOMPANY_10168 #LINK_JOBSPOT, #XCOMPANY_18464 #LINK_JOBSPOT, #XCOMPANY_141101 #LINK_JOBSPOT, #XCOMPANY_9934 #LINK_JOBSPOT, #XCOMPANY_3307 #LINK_JOBSPOT, #XCOMPANY_17165 #LINK_JOBSPOT, #XCOMPANY_11074 #LINK_JOBSPOT, #XCOMPANY_129043 #LINK_JOBSPOT, #XCOMPANY_21491 #LINK_JOBSPOT, #XCOMPANY_19777 #LINK_JOBSPOT, #XCOMPANY_8031 #LINK_JOBSPOT, #XCOMPANY_13322 #LINK_JOBSPOT, #XCOMPANY_10982 #LINK_JOBSPOT, #XCOMPANY_116307 #LINK_JOBSPOT, #XCOMPANY_135627 #LINK_JOBSPOT, #XCOMPANY_10403 #LINK_JOBSPOT, #XCOMPANY_178966 #LINK_JOBSPOT, #XCOMPANY_139901 #LINK_JOBSPOT, #XCOMPANY_82256 #LINK_JOBSPOT, #XCOMPANY_142225 #LINK_JOBSPOT, #XCOMPANY_10175 #LINK_JOBSPOT, #XCOMPANY_179427 #LINK_JOBSPOT, #XCOMPANY_4188 #LINK_JOBSPOT, #XCOMPANY_15377 #LINK_JOBSPOT, #XCOMPANY_88268 #LINK_JOBSPOT, #XCOMPANY_128729 #LINK_JOBSPOT, #XCOMPANY_139735 #LINK_JOBSPOT, #XCOMPANY_130203 #LINK_JOBSPOT, #XCOMPANY_12177 #LINK_JOBSPOT, #XCOMPANY_110660 #LINK_JOBSPOT, #XCOMPANY_13458 #LINK_JOBSPOT, #XCOMPANY_114860 #LINK_JOBSPOT, #XCOMPANY_119803 #LINK_JOBSPOT, #XCOMPANY_9911 #LINK_JOBSPOT, #XCOMPANY_103132 #LINK_JOBSPOT, #XCOMPANY_12506 #LINK_JOBSPOT, #XCOMPANY_167251 #LINK_JOBSPOT, #XCOMPANY_11715 #LINK_JOBSPOT, #XCOMPANY_150410 #LINK_JOBSPOT, #XCOMPANY_88268 #LINK_JOBSPOT, #XCOMPANY_124709 #LINK_JOBSPOT, #XCOMPANY_11309 #LINK_JOBSPOT {
+	display: none;
+	}
+	
+	/* Fix for opleidingen database */
+	
+#opleidingInhoudPage_opleidingInhoud_ietsVoorJou_SchatJezelfIn, #opleidingPraktischDetailPage_container_opleidingPraktischDetail_ietsVoorJou_SchatJezelfIn {
+	padding: 10px 20px;
+	color: white;
+}

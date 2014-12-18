@@ -1,0 +1,62 @@
+/*Print CSS*/
+@media print {
+	div#navigation, div#searchDiv, div#serviceNav, ul#crumbTrail, div#topAds {display: none;}
+	.hide, .paging, div.detailActions  {display: none;}
+	div.searchCounter.bottom {display: none;}
+	div#footer {display: none;}
+	div#socialCenter {display: none;}
+	body, body.hasAds div#container {background: none;}
+	div#footerWrapper, div#footerCenter {background: none;}
+	div#goToSocial {display: none;}
+	div#sidebar {display: none;}
+	div.sidebar div#content {width: auto;}
+	div#content {margin-right: 100px;}
+	#infoHeader {display: none;}
+    #sollicitatiehistoriek   {display: none !important;}
+
+	/* Some stuff for the MLB vacature detail */
+	
+	body#mlb .vacatureDetail {
+		border: none;
+	}
+	body#mlb #vacatureContent .paddingBox {
+		padding: 0;
+	}
+	body#mlb #vacatureContent .paddingBox {
+		padding: 0;
+	}
+	body#mlb .vacaturePreview .vacatureDetail {
+		width: 700px;
+		background: none;
+	}
+	
+	body#mlb .vacatureDetail .vacatureDetail .vacatureContent {
+		width: auto;
+	}
+	
+	body#mlb .vacaturePreview #vacatureMeta .footer {
+		position: relative;
+		margin-top: 2em;
+	}
+	
+	body#mlb #ui-datepicker-div {
+		display: none;
+	}
+	.jobDisclaimer {color: gray; font-size: 12px}
+	.socialbutton, #socialLinksIntro {display: none;}
+	#access {display: none;}
+	div.hiddenHeader {display: none;}
+	#vacatureMeta {
+		float: right;
+		clear: right;
+		max-width: 30%;
+		margin-left: 20px;
+	}
+	.LINK_JOBSPOT {margin-left: 20px;}
+	div.searchCounter.detail {display: none;}
+	#vacatureMeta .passive.footer {color: gray; font-size: 12px; }
+	#vacatureMeta h3 {
+		color: gray; font-size: 12px; text-transform: uppercase;
+	}
+	
+}
