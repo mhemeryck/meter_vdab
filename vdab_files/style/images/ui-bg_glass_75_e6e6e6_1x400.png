@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+<meta http-equiv="content-language" content="nl" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+
+<script type="text/javascript" src="/js/events.js"></script>
+<script type="text/javascript" src="/js/tooltip.js"></script>
+<script type="text/javascript" src="/js/nifty.js"></script>
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/redesign.js"></script>
+
+<!-- <script type="text/javascript" src="http://www.vdab.be/js/jquery-1.4.2.min.js"></script> -->
+
+<script type="text/javascript" charset="utf-8">
+	jQuery(function() {
+
+		checkInUsePage('#searchFieldPage');
+
+		jQuery(".swap_value_page").each(function(i){
+			jQuery(this).focus(function(){
+				if (jQuery(this).val() == 'Zoek op deze site') {
+					jQuery(this).val("");
+					checkInUsePage('#searchFieldPage');
+				}
+			}).blur(function(){
+				if (jQuery.trim(jQuery(this).val()) == "") {
+					jQuery(this).val('Zoek op deze site');
+				}
+				checkInUsePage('#searchFieldPage');
+			});
+		});
+
+		function checkInUsePage(objId) {
+			if (jQuery.trim(jQuery(objId).val()) != 'Zoek op deze site') {
+				jQuery(objId).addClass('inUse');
+			} else {
+				jQuery(objId).removeClass('inUse');
+			}
+		}
+
+	});
+</script>
+
+<META content="Vlaamse Dienst voor Arbeidsbemiddeling en Beroepsopleiding (VDAB)." name=description>
+<META content="vdab-homepage, VDAB, Vlaanderen, vdab, werk, België, werken, Europa, belgie, job, cursus, opleiding, opleidingen, vacature, vacatures, arbeid, sollicitatie, carriere, carrière, solliciteren, baan, jobs, interim, interimjobs, interimwerk" name=keywords>
+
+
+		<style type="text/css" media="screen">
+/*<![CDATA[*/
+		@import "/style/frame.css";
+		@import "/style/main.css";
+		@import "/style/css_vac.css";
+		
+		
+/*	START Move to external CSS   */
+		
+		h1 strong, h1 b, h2 strong, h2 b, h3 strong, h3 b, h4 strong, h4 b {
+			font-weight: normal;
+		}
+		
+		.boxSpring div.paddingBox, .boxCool div.paddingBox, .boxSunny div.paddingBox  {
+			padding: 1em;
+		}
+		
+		
+		img.right {
+			float:right;
+			margin: 0 0 1em 2em;
+		}
+		
+		.image, a.image, a.image:hover {
+			border: none;
+			text-decoration: none;
+		}
+		
+		div#main {
+			width: 960px;
+			margin: 0 auto;
+			}
+		
+/*                                        Clearfix for static two column pages                             */
+		div#contentContainer.sidebar:after {content: "."; display:block; height:0; clear:both; visibility:hidden;}
+		div#contentContainer.sidebar {display: inline-block;}
+		/* Hides from IE-mac \*/
+		* html div#contentContainer.sidebar {height: 1%;}
+		.div#contentContainer.sidebar {display: block;}
+		/* End hide from IE-mac */
+		
+		
+		div.sidebar div#content {
+			float: left;
+			width: 600px;
+		}
+		
+		div#sidebar {
+			background: url("/style/bkg/backgroundboxes.gif") repeat-x scroll left bottom #FFFFFF;
+			border: 1px solid #E5E5E5;
+		    color: #666666;
+			width: 220px;
+		}
+		
+		
+		div#sidebar div#sidebarMenuTitle {
+			xbackground-color: #b3b700;
+			background: url("/style/bkg/backgroundboxes.gif") repeat-x scroll left bottom #FFFFFF;
+			border-bottom: 1px solid #b3b700;
+		}
+		
+		div#sidebar div#sidebarMenuTitle h2 {
+			margin: 0;
+			padding: 15px;
+		}
+		
+		div#sidebar div#sidebarMenuTitle h2 a {
+			color: white;
+			color: #b3b700;
+			color: #555;
+			border: none;
+		}
+		
+		div#sidebar div.paddingBox {
+			padding: 15px;
+		}
+		
+		div.boxSpring div.boxPadding h4,div.boxSpring div.boxPadding h3 {
+			padding-top:0;
+			margin-top:0;
+		}
+		
+		
+		ul.lightMenu, ul.lightMenu ul, ul.lightMenu li {
+			margin: 0;  /* fix for ie8 */
+			padding: 0;
+			border: 0px solid red;
+			display: block;
+		}
+		
+		
+/* Box Mods */
+
+.boxSunny {
+	background-color: #fff9d6;
+	border-color: #f9f0ad;
+}
+
+.boxCool {
+	background-color: #e6eff4;
+	border-color: #cbdce5;
+}
+
+.boxSunny h2, .boxSunny h3, .boxSunny h4 {
+	color: #ae9b2e;
+	margin-top: 0;
+}
+
+.boxSpring h2, .boxSpring h3, .boxSpring h4 {
+	color: #708c52;
+	margin-top: 0;
+}
+
+
+
+/* List with extra padding */
+
+.contentList li {
+	margin: 0.6em 0;
+	padding-left: 20px;
+}
+.contentList li li {
+	margin: 0.3em 0;
+	padding-left: 20px;
+}	
+		
+/*	END Move to external CSS   */
+		
+		
+	/*]]>*/
+		</style><!--[if lt IE 7]>
+			<style media="screen" type="text/css">
+			#container {
+				height:100%;
+			}
+			</style>
+		<![endif]-->
+
+
+<style type="text/css" media="screen">
+	.boxSpring div.paddingBox, .boxCool div.paddingBox, .boxSunny div.paddingBox  {
+				padding: 1em;
+			}
+
+
+			#searchFieldPage.swap_value_page {
+				color: #AAA;
+				}
+
+			#searchFieldPage.swap_value_page.inUse {
+				color: black;
+				}
+
+			.boxSpring h2, .boxSpring h3, .boxSpring h4 {
+				color: #708c52;
+				margin-top: 0;
+			}
+</style>
+
+<title>Pagina niet gevonden</title>
+
+</head>
+
+<body>
+
+
+<div id="container">	
+
+<div id="main">
+
+
+
+<div id="header">
+	<div id="access">
+		<a href="#maincontent" accesskey="S">Ga direct naar de inhoud (Access Key S)</a>
+	</div><a href="http://www.vdab.be/" id="logo" name="logo"><img src="/style/frame/vdab_logo.gif" alt="VDAB" title="VDAB (Vlaamse Dienst voor Arbeidsbemiddeling en Beroepsopleiding)" /></a>
+	<div class="hiddenHeader">
+		Algemene links
+	</div>
+	<div id="serviceNav">
+		<ul id="serviceMenu">
+			<li>
+				<a href="http://www.vdab.be/" accesskey="1" title="Home (Access Key 1)">Home</a>
+			</li>
+			<li>
+				<a href="http://www.vdab.be/vdab/">Over VDAB</a>
+			</li>
+			<li>
+				<a href="http://www.vdab.be/werklinks/">Werklinks</a>
+			</li>
+				<li>
+					<a href="http://www.vdab.be/help/">FAQ</a>
+				</li>
+			<li>
+				<a href="http://www.vdab.be/contact/" accesskey="9" title="Contact (Access Key 9)">Contact</a>
+			</li>
+			<li class="last">
+				<a href="http://www.vdab.be/a-z/" accesskey="3" title="A tot Z (Access Key 3)">A tot Z</a>
+			</li>
+		</ul>
+		<ul id="login">
+	<li class="last">
+		<a href="/login/">Meld je aan</a>
+	</li>
+</ul>
+
+		
+	</div>
+		<div id="searchDiv">
+			<form id="doSearch" class="doSearch" action="http://search.atomz.com/search/" method="get">
+				<input type="hidden" name="sp-a" value="00041ed1-sp00000001" />
+				<div class="mainSearchBox">
+					<label for="searchField" class="screenreader">Zoek</label><input type="text" id="searchField" name="sp-q" value="Zoek op deze site" class="swap_value" /> <input type="hidden" id="searchType" value="0" /> <input type="image" src="/style/frame/rightsearch.gif" class="go" alt="Zoek" />
+				</div>
+			</form>
+		</div>
+
+
+<div id="navigation">
+	<div class="hiddenHeader">
+		<a name="mainnavigation" id="mainnavigation"></a>Rubrieken van de VDAB website
+	</div>
+	<div id="mainNav">
+			<ul>
+				<li id="jo" >
+					<a href="/jobs/">Jobs</a>
+				</li>
+				<li id="op">
+					<a href="/opleidingen/">Opleidingen</a>
+				</li>
+				<li id="be">
+					<a href="/begeleiding/">Begeleiding <span>en ori&euml;ntatie</span></a>
+				</li>
+				<li id="ni">
+					<a href="/nieuws/">Nieuws</a>
+				</li>
+				<li id="ml">
+					<a href="/mijnloopbaan/">Mijn loopbaan</a>
+				</li>
+				<li id="pa">
+					<a href="http://partners.vdab.be">Partners</a>
+				</li>
+				<li id="wg">
+					<a href="http://werkgevers.vdab.be/werkgevers/">Werkgevers</a>
+				</li>
+			</ul>
+	</div>
+	
+	<div>
+		<script type="text/javascript" src="http://vdab.be/metriweb/mwTag.js"></script>
+		<script type="text/javascript">
+		var keyword = "info_homepagina";
+		var extra = "nl";
+		metriwebTag ("vdab", keyword, extra);
+		</script>
+	</div>
+</div>
+</div>
+
+
+
+	
+
+<div id="contentContainer" >
+
+<div id="content">
+
+<div class="paddingBox">
+
+<div class="hiddenHeader">Pagina spoor</div>
+
+
+<div class="boxSpring">
+	<div class="paddingBox">
+<h1 style="font-size: 32px;"><a name="maincontent"></a>Pagina niet gevonden</h1>
+
+<p style="font-size: 15px; line-height: 20px">
+De  pagina die je zoekt bestaat niet. Mogelijk is dit een foutieve link, bestaat deze link niet langer 
+of is de url niet goed gespeld. </p>
+
+<p style="font-size: 15px; line-height: 20px"><strong>Opties om je terug op weg te helpen:</strong>
+<ul style="font-size: 15px; line-height: 24px">
+	<li>Ga terug naar de <a href="/">homepagina</a></li>
+	<li>Zoek in de <a href="/a-z/">A tot Z</a></li>
+	
+	<li>Zoek in de <a href="/map/">sitemap</a></li>
+	<li>Gebruik het onderstaande zoekveld</li>
+</ul>
+
+
+	<form action="http://search.atomz.com/search/" method="get">
+		<input type="hidden" name="sp-a" value="00041ed1-sp00000001" />
+		<input type="hidden" id="searchType" value="0" />
+		<table cellspacing="0">
+		<tr>
+		<td style="vertical-align: middle;">
+		<label for="zoek" class="" style="display:none">Zoek: </label>
+		</td>
+		<td>
+		<input style="padding: 5px; font-size: 14px; width: 200px;" type="text" id="searchFieldPage" name="sp-q" value="Zoek op deze site" class="swap_value_page" size="25" />
+		</td>
+		<td>
+		<span class="formButtons">
+			&nbsp;<a href="javascript:void(0)" class="button small green" style="margin-top:3px;" onClick="$(this).closest('form').submit()"><span>Zoek</span></a>
+		<input style="position: absolute;left: -9999px;width: 1px;height: 1px;" type="submit" name="zoek" value="Zoek"/>
+		</span>
+		</td>
+		</tr>
+		</table>
+	</form>
+</p>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+</div></div>
+
+
+
+<div id="footerSocial">
+	<div id="socialCenter">
+		<div id="socialLinks">
+			<div id="socialLinksIntro">Deel deze pagina:</div>
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="facebook">
+				<div class="fb-like" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false"></div>
+			</div>
+			<div class="linkedin"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				
+			<script type="IN/Share"></script>
+			</div>
+			<div class="google">
+				<!-- Place this tag where you want the +1 button to render. -->
+				<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+
+				<!-- Place this tag after the last +1 button tag. -->
+				<script type="text/javascript">
+				  window.___gcfg = {lang: 'nl'};
+
+				  (function() {
+				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				    po.src = 'https://apis.google.com/js/plusone.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script>
+			</div>
+			<div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="nl">Tweeten</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			
+		</div>
+	</div>
+	<div id="footerWrapper">
+		<div id="footerCenter">
+			<div id="footerText">
+				<div id="goToSocial"><span class="volgOns">Volg VDAB op</span><a href="https://www.facebook.com/vdab.be" class="facebook">Facebook</a><a href="https://twitter.com/vdab_be" class="twitter">Twitter</a><a href="http://www.linkedin.com/company/10197" class="linkedin">Linkedin</a></div>
+				<p>
+				&copy; 2014 <a href="http://vdab.be/vdab/"><span class="notranslate">VDAB</span></a> - <a href="http://vdab.be/disclaimer.shtml">Disclaimer</a> - Hulp nodig? Lees de <a href="http://vdab.be/help/">veelgestelde vragen</a>, mail naar <a href="mailto:info@vdab.be" id="mailhref" onclick="javascript:document.getElementById('mailhref').href = 'mailto:info@vdab.be?body=Je vraag/suggestie/probleem:%0D%0A%0D%0A%0D%0A%0D%0AEnkele gegevens die ons misschien op weg helpen:%0D%0APagina: ' + document.location + '%0D%0AUser-agent: ' + navigator.userAgent + '%0D%0ABrowser: ' + navigator.appCodeName + '%0D%0AVersie: ' + navigator.appVersion + '%0D%0APlatform: ' + navigator.platform; ">info@vdab.be</a> of bel naar 0800 30 700 (van 8 tot 19 uur).
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+var _gas = _gas || [];
+_gas.push(['_setAccount', 'UA-3367680-1']); 
+_gas.push(['_setDomainName', 'vdab.be']);
+_gas.push(['_trackPageview']);
+_gas.push(['_gasTrackForms']);
+_gas.push(['_gasTrackOutboundLinks']);
+_gas.push(['_gasTrackDownloads']);
+
+(function() {
+var ga = document.createElement('script');
+ga.type = 'text/javascript';
+ga.async = true;
+ga.src = 'http://www.vdab.be/js/gas-1.10.1.min.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script> 
+
+
+</div>
+
+</body>
+
+</html>
